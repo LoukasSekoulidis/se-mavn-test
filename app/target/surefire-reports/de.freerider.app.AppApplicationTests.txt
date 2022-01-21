@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: de.freerider.app.AppApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.787 s <<< FAILURE! - in de.freerider.app.AppApplicationTests
+contextLoads  Time elapsed: 0.009 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'customersContoller' defined in file [/Users/lukas/Desktop/Semester4/Software_Engineering_2/SE-2/app/target/classes/de/freerider/restapi/CustomersContoller.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [de.freerider.restapi.CustomersContoller]: Constructor threw exception; nested exception is java.lang.NullPointerException
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [de.freerider.restapi.CustomersContoller]: Constructor threw exception; nested exception is java.lang.NullPointerException
+Caused by: java.lang.NullPointerException
+
