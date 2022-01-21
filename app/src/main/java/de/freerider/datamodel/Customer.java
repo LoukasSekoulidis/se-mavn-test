@@ -18,7 +18,7 @@ import javax.persistence.Transient;
  */
 
 @Entity
-@Table( name = "CUSTOMER")
+@Table(name = "CUSTOMER")
 public class Customer {
 
     /**
@@ -37,7 +37,7 @@ public class Customer {
     /**
      * none-surname name parts, never null, mapped to "" when empty.
      */
-	@Column(name = "NAME")
+	@Column(name = "FIRST_NAME")
     private String firstName = "";
 
     /**

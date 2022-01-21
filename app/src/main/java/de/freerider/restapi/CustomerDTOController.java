@@ -152,26 +152,10 @@ public class CustomerDTOController implements CustomerDTOAPI {
 		if ( deniedList.size() == 0 ) {
 			re = new ResponseEntity<List<CustomerDTO>>(HttpStatus.ACCEPTED);
 		} else {
-			re = new ResponseEntity<List<CustomerDTO>>(deniedList, HttpStatus.CONFLICT);
+			re = new ResponseEntity<List<CustomerDTO>>(deniedList, HttpStatus.NOT_FOUND);
 		}
 		return re;
 	}
-	
-	/**
-	 * PUT /customers
-	*/
-//	@Override
-//	public ResponseEntity<List<CustomerDTO>> putCustomers(@RequestBody List<CustomerDTO> dtos ) {
-//	// TODO: replace by logger
-//	System.err.println( request.getMethod() + " " + request.getRequestURI() ); //
-//	dtos.stream().forEach( dto ->{
-//		dto.print();
-//		Optional<Customer> customerOpt = dto.create(); 
-//		CustomerDTO.print( customerOpt );
-//	});
-//	return new ResponseEntity<>( null, HttpStatus.ACCEPTED );
-//	}
-
 	
 	/*
 	 * DELETE
